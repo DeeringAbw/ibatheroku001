@@ -14,9 +14,10 @@ class DBike {
 
 $listOfBikes = [];
 
-$bikecount = 10;
+//$bikecount = 10;
+$my_env_var = getenv('loopno');
 
-for($i=0; $i < $bikecount; $i++){
+for($i=0; $i < $my_env_var; $i++){
 
     $bike = new DBike;
     $bike -> number=$i;

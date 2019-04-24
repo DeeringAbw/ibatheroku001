@@ -14,7 +14,9 @@ class DBike {
 
 $listOfBikes = [];
 
-for($i=0; $i < 10; $i++){
+$bikecount = 10;
+
+for($i=0; $i < $bikecount; $i++){
 
     $bike = new DBike;
     $bike -> number=$i;

@@ -23,5 +23,17 @@ for($i=0; $i < 10; i++){
     $listOfBikes[]=$bike;
 }
 
-print_r($listOfBikes);
+//print_r($listOfBikes);
+
+/*set the header type for output*/
+
+header('Content-Type: application/json');
+
+/*Create a variable to hold your JSON data */
+
+$jsonOutput = json_encode($listOfBikes);
+
+/*Output the JSON data*/
+
+echo $jsonOutput;
 
